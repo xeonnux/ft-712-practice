@@ -1,0 +1,95 @@
+#pointer {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  top: 60px;
+}
+#pointer:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+#pointer:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid #303030;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+.pf-index {
+  position: relative;
+  left: 10px;
+  height: 250px;
+  width: 20%;
+  background-color: #303030;
+  z-index: -1;
+}
+
+.pf-child {
+  position: relative;
+  left: 10px;
+  height: 250px;
+  width: 20%;
+  background-color: #797979;
+  z-index: -20;
+  margin-left: 1px;
+}
+
+#pointer-child {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  top: 60px;
+  z-index: -1;
+}
+
+#pointer-child:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid #b9b9b9;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  z-index: -1;
+}
+
+.inside {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  color: white;
+  height: 100%;
+}
+
+.inside-normal {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  height: 100%;
+}
+
+i {
+  font-size: 3rem !important;
+  color: aliceblue;
+  font-weight: 600;
+}
