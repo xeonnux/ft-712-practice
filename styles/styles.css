@@ -169,19 +169,7 @@ li > a:hover {
   display: block;
 }
 
-.content-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 1rem;
-}
-
 .cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
 }
 
 svg {
@@ -279,18 +267,7 @@ svg {
   margin: 0;
 }
 
-.pf-section {
-  margin: 0;
-  display: flex;
-  justify-content: start;
-}
 .pf-wrapper {
-  display: flex;
-  margin-top: 4rem;
-  width: 80vw;
-  height: 250px;
-  margin-bottom: 4rem;
-  z-index: -10;
 }
 
 .footer {
@@ -306,7 +283,7 @@ svg {
 .dropdown-content-right a:hover {background-color: #ddd;}
 .dropdown-content-left a:hover {background-color: #ddd;}
 
-.dropdown:hover .dropdown-content-right {display: block;}
-.dropdown:hover .dropdown-content-left {display: flex;}
+.dropdown:hover .dropdown-content-right {}
+.dropdown:hover .dropdown-content-left {}
 
 .dropdown:hover .dropbtn {border-bottom: solid 1px #303030;}
